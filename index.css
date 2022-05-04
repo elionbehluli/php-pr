@@ -1,0 +1,246 @@
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+#pjesaKryesore {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#header {
+    margin: auto;
+    height: 50px;
+    border: 5px solid black;
+}
+
+#logo { 
+    width: 96px;
+    height: 96px;
+    margin-left: 43%;
+    margin-top: 5px;
+}
+
+#bold {
+    margin:auto;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 20%;
+    padding-top: 20%;
+}
+
+#p1 {
+    font-size: 30px;  
+    display: grid;
+	font-family: 'Zen Tokyo Zoo', cursive;
+	text-align: center;
+    text-transform: uppercase;
+	color: #ffd9e2;
+	text-shadow: 0 0 0 transparent,
+                0 0 10px #ff003c,
+                0 0 20px rgba(255, 0, 60, 0.5),
+                0 0 40px #ff003c,
+                0 0 100px #ff003c,
+                0 0 200px #ff003c,
+                0 0 300px #ff003c,
+                0 0 500px #ff003c,
+                0 0 1000px #ff003c;
+	animation: animate 3s infinite alternate;
+}
+@keyframes animate {
+	40% {
+		opacity: 1;
+	}
+	42% {
+		opacity: 0.8;
+	}
+	43% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 0.3;
+	}
+	46% {
+		opacity: 1;
+	}
+}
+
+#p2 {
+    font-family: unset;
+    color: white;
+}
+
+#PjesaFotos {
+    width: 50%;
+    position: relative;
+}
+
+#fotoja {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 18px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: black;
+}
+
+#PjesaFotos:hover .overlay {
+    opacity: 0.5;
+}
+
+.text {
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#buttons {
+    position: relative;
+    border: none;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.4 ease-in;
+    z-index: 1;
+}
+
+#buttons::before,
+#button::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+.button1 {
+   background-color: white;
+   text-decoration: none;
+   color: black;
+   text-align: center;
+   font-size: 16px;
+   padding: 10px 24px;
+   border: 2px solid black;
+   border-radius: 8px;
+   display: inline-block;
+   cursor: pointer;
+   transition-duration: 0.8s;
+}
+
+.button1:hover {
+    border: 2px solid orangered;
+    color: orangered;
+    background-color: black;
+}
+
+.button2 {
+   background-color: white;
+   text-decoration: none;
+   color: black;
+   text-align: center;
+   font-size: 16px;
+   padding: 10px 24px;
+   border: 2px solid black;
+   border-radius: 8px;
+   display: inline-block;
+   cursor: pointer;
+   transition-duration: 0.8s;
+}
+ 
+.button2:hover {
+    border: 2px solid orangered;
+    color: orangered;
+    background-color: black;
+}
+
+.button3 {
+   background-color: white;
+   text-decoration: none;
+   color: black;
+   text-align: center;
+   font-size: 16px;
+   padding: 20px 24px;
+   border: 2px solid black;
+   border-radius: 8px;
+   display: inline-block;
+   cursor: pointer;
+   transition-duration: 0.8s;
+}
+ 
+.button3:hover {
+    border: 2px solid orangered;
+    color: orangered;
+    background-color: black;
+}
+
+footer {
+    padding-top: 30%;
+    margin-right: auto;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+}
+
+#footerPhotos {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+#social1 {
+    width: 20px;
+    height: 20px;
+}
+
+#social2 {
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+}
+
+#social3 {
+    width: 20px;
+    height: 20  px;
+    padding-left: 5px;
+}
+
+#socialLink1:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+#socialLink2:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+#socialLink3:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+#socials {
+    color: white;
+}
